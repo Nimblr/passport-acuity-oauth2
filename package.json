@@ -1,0 +1,24 @@
+{
+  "name": "@nimblr/passport-acuity-oauth",
+  "description": "An OAuth2 strategy to connect with Fitbit",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Andres C. Rodriguez",
+    "email": "accounts@nimblr.ai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Nimblr/passport-acuity-oauth"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "passport-oauth2": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec test/*.test.js",
+    "test-cov": "istanbul cover  --dir ./reports/coverage ./node_modules/.bin/_mocha -- test/*.test.js",
+    "view-cov": "open ./reports/coverage/lcov-report/index.html"
+  }
+}
