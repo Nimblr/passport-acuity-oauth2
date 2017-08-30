@@ -1,5 +1,5 @@
 {
-  "name": "@nimblr/passport-acuity-oauth2",
+  "name": "passport-acuity-oauth2",
   "version": "1.0.0",
   "description": "Acuity authentication strategy for Passport.",
   "keywords": [
