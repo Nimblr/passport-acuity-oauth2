@@ -1,21 +1,49 @@
 {
-  "name": "@nimblr/passport-acuity-oauth",
-  "description": "An OAuth2 strategy to connect with Fitbit",
-  "version": "1.0.0",
-  "license": "UNLICENSED",
+  "name": "@nimblr/passport-acuity-oauth2",
+  "version": "0.0.0",
+  "description": "Acuity authentication strategy for Passport.",
+  "keywords": [
+    "passport",
+    "authn",
+    "authentication",
+    "acuity",
+    "ehr"
+  ],
   "author": {
-    "name": "Andres C. Rodriguez",
-    "email": "accounts@nimblr.ai"
+    "name": "Andrés Rodríguez",
+    "email": "andres@nimblr.ai",
+    "url": "https://nimblr.ai/"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Nimblr/passport-acuity-oauth"
+    "url": "git://github.com/Nimblr/passport-acuity-oauth2.git"
   },
-  "main": "lib/index.js",
+  "bugs": {
+    "url": "https://github.com/Nimblr/passport-acuity-oauth2/issues"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
   "dependencies": {
-    "passport-oauth2": "^1.4.0"
+    "debug": "3.0.x",
+    "passport-oauth2": "1.x.x"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "4.x.x",
+    "chai-passport-strategy": "1.x.x",
+    "istanbul": "~0.4.5",
+    "mocha": "3.x.x",
+    "node-mocks-http": "^1.5.4",
+    "sinon": "3.x.x"
+  },
+  "engines": {
+    "node": ">= 0.12.0"
+  },
   "scripts": {
     "test": "node_modules/.bin/mocha --reporter spec test/*.test.js",
     "test-cov": "istanbul cover  --dir ./reports/coverage ./node_modules/.bin/_mocha -- test/*.test.js",
